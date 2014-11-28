@@ -1,20 +1,45 @@
 <html>
 <head>
-	<title>Login Page</title>
+	<title>Control Panel | Login</title>
 	<style>
-		form { font-size: 12px; text-align: right; }
-		form .label { text-align: left; display: inline-block; width: 100px; }
-		input .input { width: 200px; }	
+		body {
+			background-color: #DDDDDD;
+		}
+		
+		div.main {
+			width: 305px;
+			margin: 10px;
+			background-color: white;
+			border: 1px solid gray;
+			font-size: 13px;
+			padding: 10px;
+			text-align: right;
+		}
+		
+		div.label {
+			width: 100px;
+			display: inline-block;
+			margin-bottom: 5px;
+			text-align: left;
+		}
+		
+		input.text {
+			width: 200px;
+			font-size: 12px;
+		}
+		
+		input.submit {
+		}
 	</style>
 </head>
 <body>
-	<div style="width: 250px;">
+	<div class="main">
 	<form action="login.php" method="post">
 		<div class="label">Username</div>
-		<input class="input" type="text" value="" name="username" /><br>
+		<input type="text" class="text" name="username" /><br>
 		<div class="label">Password</div>
-		<input class="input" type="password" value="" name="password" /><br>
-		<input type="submit" value="Submit" />
+		<input type="password" class="text" name="password" /><br>
+		<input type="submit" class="submit" value="Submit" />
 	</form>
 	</div>
 </body>
